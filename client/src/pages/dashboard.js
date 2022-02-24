@@ -6,7 +6,6 @@ import useLocalStorage from '../hooks/useLocalStorage';
 
 export default function Dashboard() {
     const [ storedList, addNewDomain ] = useLocalStorage();
-    console.log({storedList})
     return (
         <>
             <AddNewCompanyDomain addNewDomain={addNewDomain} />

@@ -5,7 +5,6 @@ import CompanyDomain from "../CompanyDomain/CompanyDomain";
 
 export default function List({ ...props }) {
     const { columns, storedList } = props
-    console.log('list', { storedList });
     return (
         <>
             <Table hover responsive size="sm">

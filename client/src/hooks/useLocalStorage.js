@@ -22,12 +22,8 @@ const useLocalStorage = () => {
   const addNewDomain = newValue => {
     try {
       let arrStr = window.localStorage.getItem(keyName)
-      console.log({ arrStr })
       let arr = JSON.parse(arrStr)
-      console.log({ arr })
       arr.push(newValue)
-      console.log({ arr })
-
       window.localStorage.setItem(keyName, JSON.stringify(arr));
       setStoredList(arr);
     } catch (err) {
