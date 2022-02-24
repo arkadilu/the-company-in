@@ -22,7 +22,6 @@ export default function CompanyDomain({ ...props }) {
     }, [companyDomain])
 
     const navigateToCompanyDetails = (e) => {
-        debugger
         navigate(`/domain/` + currentDisplayedCompanyDetails.domain);
     }
 
